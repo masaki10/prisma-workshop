@@ -1,8 +1,8 @@
-GET http://localhost:3000/users
+GET http://localhost:3001/users
 
 ###
 
-POST http://localhost:3000/signup
+POST http://localhost:3001/signup
 Content-Type: application/json
 
 {
@@ -12,7 +12,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/post
+POST http://localhost:3001/post
 Content-Type: application/json
 
 {
@@ -22,16 +22,23 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:3000/post/1/views
+PUT http://localhost:3001/post/1/views
 
 ###
 
-PUT http://localhost:3000/publish/5
+PUT http://localhost:3001/publish/5
 
 ###
 
-GET http://localhost:3000/user/3/drafts
+GET http://localhost:3001/user/3/drafts
 
 ###
 
-GET http://localhost:3000/feed
+GET http://localhost:3001/post/1
+
+###
+
+GET http://localhost:3001/feed
+?searchString=join
+&skip=0
+&take=1
